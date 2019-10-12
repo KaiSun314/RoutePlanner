@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Route Planner</string>
+    <string name="title_activity_maps">Route Planner</string>
+    <string name="explore">Explore</string>
+    <string name="add_location">Add Location</string>
+    <string name="edit_locations">Edit &amp; Optimize</string>
+    <string name="directions">Directions</string>
+    <string name="search_hint">Enter a place name or address</string>
+    <string name="name_address">&lt;b&gt;%s&lt;/b&gt;&lt;br&gt;Address: %s</string>
+    <string name="name">&lt;b&gt;%s&lt;/b&gt;</string>
+    <string name="suggested_locations">Suggested Locations</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="num_location_limit_reached">Cannot add more than %s locations</string>
+    <string name="optimize">Optimize</string>
+    <string name="place_title">&lt;b&gt;%s&lt;/b&gt;</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="no_locations_added">No locations added to the route. </string>
+    <string name="no_locations_added_cont">To add a location, click on </string>
+    <string name="no_routes_found">No routes found. </string>
+    <string name="no_routes_found_cont">To create a route, click on OPTIMIZE in </string>
+    <string name="num_location_added">%s Location Added</string>
+    <string name="num_locations_added">%s Locations Added</string>
+    <string name="insert_location">Insert Location Above</string>
+    <string name="edit_location">Edit Location</string>
+    <string name="remove_location">Remove Location</string>
+    <string name="remove_all_locations">Remove All Locations</string>
+    <string name="minimum_2_locations">At least 2 locations must be added</string>
+    <string name="edit_route">Edit Route</string>
+    <string name="calculating_route">Calculating Route...</string>
+    <string name="clear_route">Clear Route</string>
+    <string name="add_current_location">Add Current Location?</string>
+    <string name="current_location">Current Location</string>
+    <string name="place_cannot_be_empty">Place Cannot Be Empty</string>
+
+    <string name="name_address_not_found">Name and address not found</string>
+    <string name="unable_to_draw_route">Unable to Draw Routes: </string>
+</resources>

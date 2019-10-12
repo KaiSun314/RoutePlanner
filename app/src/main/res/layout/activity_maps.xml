@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_above="@id/bottomNavigationView"
+        sothree:umanoOverlay="true"
+        sothree:umanoFadeColor="@android:color/transparent"
+        sothree:umanoPanelHeight="@dimen/header"
+        sothree:umanoShadowHeight="7dp">
+
+        <!-- include main content -->
+        <include layout="@layout/content_main" />
+
+        <!-- include bottom sheet -->
+        <FrameLayout
+            android:id="@+id/bottom_sheet_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@drawable/shadow"
+        android:layout_above="@+id/bottomNavigationView"/>
+
+    <FrameLayout
+        android:id="@+id/add_location_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_above="@+id/bottomNavigationView"
+        android:elevation="8dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconSize="30dp"
+        android:layout_margin="0dp"
+        android:background="@color/bottom_navigation_bar_background"
+        app:itemIconTint="@drawable/bottom_navigation_view_item_selector"
+        app:itemTextColor="@drawable/bottom_navigation_view_item_selector"
+        app:menu="@menu/bottom_navigation_bar"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"/>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_add_location">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_grey"
+                android:background="@color/white" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:label="@string/app_name"
+                android:layout_weight="1"
+                app:searchIcon="@null"
+                app:closeIcon="@null" />
+
+            <ImageButton
+                android:id="@+id/mic_or_close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mic_grey"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchResultsHeader"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/grey">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/suggested_locations"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/searchResultsExpandBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand_less_white"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"/>
+
+        <LinearLayout
+            android:id="@+id/searchHistoryHeader"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/grey">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/recent_searches"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/searchHistoryExpandBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand_less_white"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/add_current_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="@string/add_current_location"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/addLocationSubmitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:text="@string/add_location"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

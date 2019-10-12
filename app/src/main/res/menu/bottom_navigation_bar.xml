@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/explore"
+        android:enabled="true"
+        android:icon="@drawable/ic_explore_white"
+        android:title="@string/explore"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/add_location"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_location_white"
+        android:title="@string/add_location"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/edit_locations"
+        android:enabled="true"
+        android:icon="@drawable/ic_edit_location_white"
+        android:title="@string/edit_locations"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/directions"
+        android:enabled="true"
+        android:icon="@drawable/ic_directions_white"
+        android:title="@string/directions"
+        app:showAsAction="ifRoom" />
+
+</menu>

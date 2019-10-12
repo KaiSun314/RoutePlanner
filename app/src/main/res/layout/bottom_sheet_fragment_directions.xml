@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_directions_white"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="14dp"
+            android:tint="@color/blue"/>
+
+        <TextView
+            android:id="@+id/num_locations_added"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textColor="@color/blue"/>
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@color/blue"
+            android:text="@string/edit_route"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            android:minWidth="100dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+
+        <ImageButton
+            android:id="@+id/moreOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_more_vert_grey"
+            android:background="@color/white"
+            android:paddingStart="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calculatingMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBarDirections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/calculating_route"
+            android:textColor="@color/blue"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/directionLocations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/insert_location_above"
+        android:icon="@drawable/ic_add_grey"
+        android:title="@string/insert_location" />
+    <item android:id="@+id/edit_location"
+        android:icon="@drawable/ic_edit_grey"
+        android:title="@string/edit_location" />
+    <item android:id="@+id/remove_location"
+        android:icon="@drawable/ic_remove_grey"
+        android:title="@string/remove_location" />
+</menu>

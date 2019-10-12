@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp">
+
+        <ProgressBar
+            android:id="@+id/progressBarMap"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminateTint="@color/blue"/>
+
+    </FrameLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_near_me_blue"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        android:id="@+id/returnHome"
+        android:layout_gravity="end|top"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp" />
+
+</FrameLayout>
